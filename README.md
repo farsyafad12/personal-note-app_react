@@ -26,4 +26,5 @@ Gunakan template ini untuk belajar, bereksperimen, atau bahkan menciptakan aplik
 
 **note : Jika Ada Pertanyaan Bisa Langsung Hubungi Kami**
 <hr />
+
 *Powered By FarSyaFad Tech 2025  |  All Right Reserved  |  Created By Ahnaf Samih*
