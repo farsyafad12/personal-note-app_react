@@ -22,7 +22,7 @@ Gunakan template ini untuk belajar, bereksperimen, atau bahkan menciptakan aplik
    git clone https://github.com/farsyafad12/personal-note-app_React.git
    cd personal-note-app_react
    npm install
-   npm run dev / npm run start
+   npm run dev
 
 **note : Jika Ada Pertanyaan Bisa Langsung Hubungi Kami**
 <hr />
