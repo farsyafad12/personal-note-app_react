@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 14px;
+}
+
+body, #root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  color: white;
+  background-color: #222831;
+  padding: 35px;
+}
+
+.container-add-note {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  user-select: none;
+}
+
+.container-add-note h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #eeeeee;
+  font-size: 2.5rem;
+  letter-spacing: 1.35px;
+  text-align: center;
+}
+
+.container-add-note form .header-add {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.container-add-note form .header-add h4 {
+  font-family: "Nunito", serif;
+  color: #eeeeee;
+  font-size: 1.1rem;
+  letter-spacing: 1.18px;
+}
+
+.container-add-note form .header-add #sisaKarakter {
+  font-family: "Nunito", serif;
+  font-weight: 600;
+  color: #eeeeee;
+  font-size: 1rem;
+  letter-spacing: 1.18px;
+}
+
+.container-add-note form {
+  width: 90%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container-add-note form input[type="text"],
+.container-add-note form textarea {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 6.5px;
+  background-color: #eeeeee;
+}
+
+.container-add-note form input[type="text"] {
+  height: 35px;
+  font-size: 0.95rem;
+}
+
+.container-add-note form textarea {
+  height: 200px;
+  font-size: 0.9rem;
+  resize: none;
+}
+
+.container-add-note form input[type="text"]:focus,
+.container-add-note form textarea:focus {
+  outline-color: #76abae;
+}
+
+.container-add-note form button[type="submit"] {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  padding: 7px 15px;
+  letter-spacing: 1.15px;
+  border: none;
+  border-radius: 6.5px;
+  background-color: #00adb5;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.container-add-note form button[type="submit"]:hover {
+  background-color: #007b7f;
+}
+
+.container-add-note form button[type="submit"]:active {
+  transform: scale(0.975);
+}
+
+/* --------------------------------- */
+
+.section-note {
+  width: 90%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.section-note .header-note {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+@media screen and (max-width: 750px) {
+  .section-note {
+    width: 100%;
+  }
+  
+  .section-note .header-note {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+.section-note .header-note h2,
+.section-note h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #eeeeee;
+  font-size: 1.55rem;
+  letter-spacing: 1.275px;
+  user-select: none;
+}
+
+.section-note .header-note .container-search {
+  position: relative;
+  width: 30%;
+  min-width: 225px;
+  font-family: "Poppins", sans-serif;
+  background-color: #eeeeee;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  user-select: none;
+}
+
+@media screen and (max-width: 750px) {
+  .section-note .header-note .container-search {
+    width: 90%;
+  }
+}
+
+.section-note .header-note .container-search:focus-within {
+  outline: 2.5px solid #76abae;
+  background-color: #fff;
+}
+
+.section-note .header-note .container-search .search-note-active {
+  width: 100%;
+  height: 100%;
+  font-size: 1.05rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.section-note .header-note .container-search .bi-search {
+  position: absolute;
+  right: 15px;
+  color: black;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.section-note .container-note {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+@media screen and (max-width: 750px) {
+  .section-note .container-note {
+    justify-content: center;
+  }
+}
+
+.section-note .container-note p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 1.15px;
+  font-style: italic;
+  color: #b8001f;
+}
+
+.section-note .container-note .card-note {
+  position: relative;
+  width: 275px;
+  height: auto;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  background-color: #31363f;
+  border: 2px solid white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+  .section-note .container-note .card-note {
+    width: 90%;
+    min-height: 150px;
+  }
+}
+
+.section-note .container-note .card-note .note-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1.15px;
+  padding: 0 12px;
+}
+
+.section-note .container-note .card-note .date-note {
+  font-family: "Nunito", sans-serif;
+  color: #e0dada;
+  font-size: 0.85rem;
+  letter-spacing: 1.1px;
+  padding: 5px 12px;
+}
+
+.section-note .container-note .card-note .note-body {
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 1.1rem;
+  letter-spacing: 1.1px;
+  padding: 5px 12px 15px 12px;
+  margin-bottom: 35px;
+}
+
+.section-note .container-note .card-note .btn-action {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.section-note .container-note .card-note .btn-action button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  width: 50%;
+  color: #eeeeee;
+  font-size: 1.05rem;
+  padding: 7px 15px;
+  letter-spacing: 1.15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.section-note .container-note .card-note .btn-action button:hover {
+  font-size: 1.1rem;
+  font-weight: 750;
+}
+
+.section-note .container-note .card-note .btn-action button:nth-child(1) {
+  background-color: #76abae;
+}
+
+.section-note .container-note .card-note .btn-action button:nth-child(2) {
+  background-color: #b8001f;
+}
+
+.section-note .container-note .card-note .btn-action button:nth-child(1):hover {
+  background-color: #eeeeee;
+  color: #76abae;
+}
+
+.section-note .container-note .card-note .btn-action button:nth-child(2):hover {
+  background-color: #eeeeee;
+  color: #b8001f;
+}
